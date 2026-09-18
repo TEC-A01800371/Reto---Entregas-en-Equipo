@@ -91,8 +91,8 @@ const ARQUETIPOS = [
     descripcion: "Pasajero típico: aquí el modelo no tiene señal clara.",
     pasajero: {
       HomePlanet: "Earth", CryoSleep: false, Destination: "TRAPPIST-1e", Age: 27, VIP: false,
-      Deck: "G", Num: 427, Side: "S",
-      RoomService: 0, FoodCourt: 20, ShoppingMall: 30, Spa: 0, VRDeck: 10,
+      Deck: "F", Num: 1200, Side: "S",
+      RoomService: 0, FoodCourt: 20, ShoppingMall: 0, Spa: 0, VRDeck: 0,
     },
   },
 ];

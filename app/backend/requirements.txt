@@ -1,0 +1,8 @@
+# Las mismas versiones con las que se entreno y serializo el modelo:
+# un .joblib de scikit-learn solo se garantiza con la version que lo genero.
+scikit-learn==1.9.0
+pandas>=2.3
+numpy>=2.3
+joblib>=1.5
+fastapi>=0.115
+uvicorn[standard]>=0.30

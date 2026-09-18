@@ -59,9 +59,11 @@ export default function Sensibilidad({ estado }) {
           <div className="panel-title">Sensibilidad al gasto</div>
           <h3>¿Cómo mueve cada gasto la predicción?</h3>
           <p>
-            Se sube un gasto a la vez, dejando el resto del pasajero igual. En la regresión logística,{" "}
-            <b>{ETIQUETAS[DESTACADA]}</b> fue el único gasto con coeficiente positivo (sección 11.1);
-            aquí se ve si el Random Forest coincide.
+            Se sube un gasto a la vez, dejando el resto del pasajero igual. El Random Forest separa los
+            gastos en <b>dos grupos</b>: food court y centro comercial suben la probabilidad; room service,
+            spa y VR deck la bajan. La regresión logística solo había detectado el efecto de{" "}
+            <b>{ETIQUETAS[DESTACADA]}</b> (sección 11.1). El patrón se repite con pasajeros de distintos
+            planetas y cubiertas; lo que cambia es su magnitud.
           </p>
         </div>
         <button type="button" onClick={() => setVerTabla((v) => !v)}>

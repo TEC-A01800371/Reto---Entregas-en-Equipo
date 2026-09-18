@@ -6,7 +6,9 @@
  */
 import { simulado } from "./simulado.js";
 
-export const USAR_SIMULACION = true;
+// Backend verificado contra el notebook (app/backend/verificar_pipeline.py).
+// Volver a `true` solo para trabajar en la interfaz sin el backend levantado.
+export const USAR_SIMULACION = false;
 
 async function pedir(ruta, opciones = {}) {
   const respuesta = await fetch(ruta, {
